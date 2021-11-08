@@ -213,10 +213,8 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 If you are interested in deep learning research which involves __long-tailed / imbalanced__ dataset, take a look at [Long-tail buzz](https://rahulvigneswaran.github.io/longtail-buzz/) to learn about the trending papers in this field.
 
 [🐝  Long-tail buzz](https://rahulvigneswaran.github.io/longtail-buzz/)
-<iframe
-  src="https://rahulvigneswaran.github.io/longtail-buzz/"
-  style="width:100%; height:500px;"
-></iframe>
+
+![](/readme_assets/long_tail-buzz_ss.png)
 
 ## 📝 License
 [MIT](LICENSE)

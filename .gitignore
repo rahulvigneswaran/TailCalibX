@@ -15,7 +15,7 @@ Notebooks
 *.pt
 *.pth
 *.txt
-*.png
+# *.png
 NotUsedAnymore
 .ipynb_checkpoints
 *.pdf
