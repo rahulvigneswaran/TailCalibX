@@ -210,9 +210,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 [Rahul Vigneswaran](https://rahulvigneswaran.github.io/)
 
 ## ✨ Extras
-If you are interested in deep learning research which involves __long-tailed / imbalanced__ dataset, take a look at [Long-tail buzz](https://rahulvigneswaran.github.io/longtail-buzz/) to learn about the trending papers in this field.
-
-[🐝  Long-tail buzz](https://rahulvigneswaran.github.io/longtail-buzz/)
+[🐝  Long-tail buzz](https://rahulvigneswaran.github.io/longtail-buzz/) : If you are interested in deep learning research which involves __long-tailed / imbalanced__ dataset, take a look at [Long-tail buzz](https://rahulvigneswaran.github.io/longtail-buzz/) to learn about the recent trending papers in this field.
 
 ![](/readme_assets/long_tail-buzz_ss.png)
 
