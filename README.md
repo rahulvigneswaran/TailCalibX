@@ -3,23 +3,18 @@ by [Rahul Vigneswaran](https://rahulvigneswaran.github.io/), [Marc T. Law](http:
 
 ![TailCalibX methodology](readme_assets/method.svg "TailCalibX methodology")
 
-## Contents
-  * [🐣 Easy Usage (Recommended way to use our method)](#---easy-usage--recommended-way-to-use-our-method-)
-    + [💻 Installation](#---installation)
-    + [👨‍💻 Example Code](#------example-code)
-  * [🧪 Advanced Usage](#---advanced-usage)
-    + [✔ Things to do before you run the code from this repo](#--things-to-do-before-you-run-the-code-from-this-repo)
-    + [📀 How to use?](#---how-to-use-)
-    + [⚙ Arguments](#--arguments)
-  * [🏋️‍♂️ Trained weights](#-------trained-weights)
-  * [🪀 Results on a Toy Dataset](#---results-on-a-toy-dataset)
-  * [🌴 Directory Tree](#---directory-tree)
-  * [📃 Citation](#---citation)
-  * [👁 Contributing](#---contributing)
-  * [❤ About me](#--about-me)
-  * [✨ Extras](#--extras)
-  * [📝 License](#---license)
-
+# Table of contents
+- [🐣 Easy Usage (Recommended way to use our method)](#-easy-usage-recommended-way-to-use-our-method)
+- [🧪 Advanced Usage](#-advanced-usage)
+- [🏋️‍♂️ Trained weights](#-trained-weights)
+- [🪀 Results on a Toy Dataset](#-results-on-a-toy-dataset)
+- [🌴 Directory Tree](#-directory-tree)
+- [📃 Citation](#-citation)
+- [👁 Contributing](#-contributing)
+- [❤ About me](#-about-me)
+- [✨ Extras](#-extras)
+- [📝 License](#-license)
+  
 ## 🐣 Easy Usage (Recommended way to use our method)
 ⚠ **Caution:**  TailCalibX is just TailCalib employed multiple times. Specifically, we generate a set of features once every epoch and use them to train the classifier. In order to mimic that, three things must be done at __every epoch__ in the following order:
 1. Collect all the features from your dataloader.
