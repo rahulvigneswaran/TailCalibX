@@ -11,7 +11,7 @@ by [Rahul Vigneswaran](https://rahulvigneswaran.github.io/), [Marc T. Law](http:
     - [✔ Things to do before you run the code from this repo](#-things-to-do-before-you-run-the-code-from-this-repo)
     - [📀 How to use?](#-how-to-use)
     - [⚙ Arguments](#-arguments)
-  - [🏋️‍♂️ Trained weights](#-trained-weights)
+  - [🏋️‍♂️ Trained weights](#%EF%B8%8F%EF%B8%8F-trained-weights)
   - [🪀 Results on a Toy Dataset](#-results-on-a-toy-dataset)
   - [🌴 Directory Tree](#-directory-tree)
   - [📃 Citation](#-citation)
