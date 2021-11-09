@@ -1,5 +1,5 @@
 # TailCalibX : Feature Generation for Long-tail Classification
-by [Rahul Vigneswaran](https://rahulvigneswaran.github.io/), [Marc T. Law](http://www.cs.toronto.edu/~law/), [Vineeth N. Balasubramanian](https://lab1055.github.io/), [Makarand Tapaswi](https://makarandtapaswi.github.io/).
+by [Rahul Vigneswaran](https://rahulvigneswaran.github.io/), [Marc T. Law](http://www.cs.toronto.edu/~law/), [Vineeth N. Balasubramanian](https://lab1055.github.io/), [Makarand Tapaswi](https://makarandtapaswi.github.io/)
 
 ![TailCalibX methodology](readme_assets/method.svg "TailCalibX methodology")
 
@@ -71,20 +71,6 @@ print(f"After: {np.unique(lab, return_counts=True)}")
     - For CIFAR100-LT: `run_all_CIFAR100-LT.sh`
     - For mini-ImageNet-LT : `run_all_mini-ImageNet-LT.sh`
 
-
-- Train the normal teachers :
-```
-python main.py --experiment=0.1 --seed=1 --gpu="0,1" --train --log_offline
-```
-- Train the augmentation teachers :
-```
-python main.py --experiment=0.2 --seed=1 --gpu="0,1" --train --log_offline
-```
-- Train the Class Balanced Distilled Student :
-```
-python main.py --experiment=0.3 --alpha=0.4 --beta=100 --seed=$seeds --gpu="0,1" --train --log_offline --normal_teacher="10,20" --aug_teacher="20,30"
-```
-
 ### ⚙ Arguments
 - `--seed` : Select seed for fixing it. 
     - Default : `1`
@@ -135,14 +121,14 @@ python main.py --experiment=0.3 --alpha=0.4 --beta=100 --seed=$seeds --gpu="0,1"
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Yj2qymSm3NgCBqvKn5r_cOiEFl9wGp3J?usp=sharing)
 
 The higher the `Imb ratio`, the more imbalanced the dataset is.
-`Imb ratio = maximum_sample_count/minimum_sample_count`.
+`Imb ratio = maximum_sample_count / minimum_sample_count`.
 
 Check [this notebook](https://colab.research.google.com/drive/1Yj2qymSm3NgCBqvKn5r_cOiEFl9wGp3J?usp=sharing) to play with the toy example from which the plot below was generated.
 ![](readme_assets/toy_example_output.svg)
 
 ## 🌴 Directory Tree
 ```bash
-.
+TailCalibX
 ├── libs
 │   ├── core
 │   │   ├── ce.py
@@ -193,7 +179,6 @@ Ignored `tailcalib_pip` as it is for the `tailcalib` pip package.
 
 
 ## 📃 Citation
-If you use this package in any of your work, cite as,
 ```
 @inproceedings{rahul2021tailcalibX,
     title   = {{Feature Generation for Long-tail Classification}},
