@@ -168,6 +168,7 @@ TailCalibX
 ├── LICENSE
 ├── main.py
 ├── Notebooks
+│   ├── Create_mini-ImageNet-LT.ipynb
 │   └── toy_example.ipynb
 ├── readme_assets
 │   ├── method.svg
