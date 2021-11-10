@@ -10,6 +10,7 @@ by [Rahul Vigneswaran](https://rahulvigneswaran.github.io/), [Marc T. Law](http:
   - [🧪 Advanced Usage](#-advanced-usage)
     - [✔ Things to do before you run the code from this repo](#-things-to-do-before-you-run-the-code-from-this-repo)
     - [📀 How to use?](#-how-to-use)
+    - [📚 How to create the mini-ImageNet-LT dataset?](#-how-to-create-the-mini-imagenet-lt-dataset)
     - [⚙ Arguments](#-arguments)
   - [🏋️‍♂️ Trained weights](#%EF%B8%8F%EF%B8%8F-trained-weights)
   - [🪀 Results on a Toy Dataset](#-results-on-a-toy-dataset)
@@ -71,6 +72,8 @@ print(f"After: {np.unique(lab, return_counts=True)}")
     - For CIFAR100-LT: `run_all_CIFAR100-LT.sh`
     - For mini-ImageNet-LT : `run_all_mini-ImageNet-LT.sh`
 
+### 📚 How to create the mini-ImageNet-LT dataset?
+Check `Notebooks/Create_mini-ImageNet-LT.ipynb` for the script that generates the mini-ImageNet-LT dataset with varying imbalance ratios and train-test-val splits.
 ### ⚙ Arguments
 - `--seed` : Select seed for fixing it. 
     - Default : `1`
@@ -182,7 +185,7 @@ Ignored `tailcalib_pip` as it is for the `tailcalib` pip package.
 ```
 @inproceedings{rahul2021tailcalibX,
     title   = {{Feature Generation for Long-tail Classification}},
-    author  = {Rahul Vigneswaran, Marc T. Law, Vineeth N. Balasubramanian, Makarand Tapaswi},
+    author  = {Rahul Vigneswaran and Marc T. Law and Vineeth N. Balasubramanian and Makarand Tapaswi},
     booktitle = {ICVGIP},
     year = {2021}
 }

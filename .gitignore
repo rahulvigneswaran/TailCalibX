@@ -9,7 +9,7 @@ datasets
 extra
 garbage
 datasets
-Notebooks
+# Notebooks
 .vscode
 *.csv
 *.pt
