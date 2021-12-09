@@ -1,0 +1,45 @@
+criterions:
+  ClassifierLoss:
+    def_file: ./loss/SoftmaxLoss.py
+    loss_params: {}
+    optim_params: null
+    weight: 1.0
+
+endlr: 0.0
+networks:
+  classifier:
+    def_file: ./models/DotProductClassifier.py
+    fix: false
+    optim_params: {}
+    scheduler_params: {}
+    params: {}
+  feat_model:
+    def_file: ./models/ResNet32Feature.py
+    fix: false
+    optim_params: {lr: 0.2, momentum: 0.9, weight_decay: 0.0005}
+    scheduler_params: {coslr: true}
+    params: {pretrain: False, pretrain_dir: None}
+
+shuffle: false
+training_opt:
+  backbone: <BackBoneNetwork>
+  batch_size: <BatchSize>
+  accumulation_step: 1
+  dataset: <DatasetName>
+  display_step: 10
+  num_classes: <NumberOfClasses>
+  cifar_imb_ratio: <ImbalanceRatio>   # 0.01, 0.02, 0.1 for 100, 50, 10
+  num_epochs: <Epochs>
+  num_workers: 5
+  open_threshold: 0.1
+  sampler: null
+  stage: <NameOfExperimentInWandB>
+  log_dir: <LogDirectory>
+
+wandb_tags: ["<tag1>","<tag2>"]
+
+pg: 
+  generate: False
+
+  
+
