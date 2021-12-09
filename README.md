@@ -1,7 +1,9 @@
 # TailCalibX : Feature Generation for Long-tail Classification
 by [Rahul Vigneswaran](https://rahulvigneswaran.github.io/), [Marc T. Law](http://www.cs.toronto.edu/~law/), [Vineeth N. Balasubramanian](https://lab1055.github.io/), [Makarand Tapaswi](https://makarandtapaswi.github.io/)
 
+[[arXiv](https://arxiv.org/abs/2111.05956#:~:text=The%20visual%20world%20naturally%20exhibits,models%20based%20on%20deep%20learning.)] [[Code](https://github.com/rahulvigneswaran/TailCalibX)] [[pip Package](https://pypi.org/project/tailcalib/0.0.1/)]
 ![TailCalibX methodology](readme_assets/method.svg "TailCalibX methodology")
+
 
 # Table of contents
   - [🐣 Easy Usage (Recommended way to use our method)](#-easy-usage-recommended-way-to-use-our-method)
