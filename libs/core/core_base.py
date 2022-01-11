@@ -393,7 +393,7 @@ class model:
 
                 with torch.set_grad_enabled(True):
                     # If training, forward with loss, and no top 5 accuracy calculation 
-                    self.batch_forward(inputs, labels, phase="train", retrain=retrain)
+                    self.batch_forward(inputs)
                     self.batch_loss(labels)                   
                     self.batch_backward()
 
@@ -654,7 +654,7 @@ class model:
             with torch.set_grad_enabled(False):
 
                 # In validation or testing
-                self.batch_forward(inputs, labels, phase=phase)
+                self.batch_forward(inputs)
                 self.batch_loss(labels)
                 minibatch_loss_total.append(self.loss.item())
 
