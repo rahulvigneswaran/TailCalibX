@@ -78,14 +78,15 @@ class model(base_model):
             self.feat[i] = accum_features[accum_labels == i]
             self.labs[i] = torch.full((self.feat[i].size()[0],), i).cuda()
 
-    def generate_points(self):
+    def generate_points(self, tailcalibX=False):
         """Generate new datapoints
         """        
-
+        
         if not os.path.isdir(self.config["training_opt"]["log_generate"]):
             os.makedirs(self.config["training_opt"]["log_generate"])
         else:
-            raise Exception("Generation Directory already exists!!")
+            if not(tailcalibX):
+                raise Exception("Generation Directory already exists!!")
 
         # Class statistics
         self.base_means = []
