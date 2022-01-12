@@ -65,7 +65,7 @@ class model(base_model):
 
             # "Accumulate features -> Generate points -> Prepare a new dataloader" cycle.
             self.accumulate(phase="train")
-            self.generate_points()
+            self.generate_points(tailcalibX=True)
             self.prepare_updated_dataset(include_generated_points = self.config["pg"]["generate"])
             data_load = self.my_dataloader["train"]
 
