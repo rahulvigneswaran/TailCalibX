@@ -81,7 +81,7 @@ def experiment_maker(experiment, dataset, imb_ratio, data_root, seed=1, valtype=
     assert imb_ratio in imbalance_ratios.keys(), "Wrong Imbalance Ratio!"
 
     # Load Default configuration
-    with open("default_config.yaml") as f:
+    with open("./libs/utils/default_config.yaml") as f:
         config = yaml.load(f, Loader=yaml.FullLoader)
 
     # Fixing dataset details and imbalance factor
