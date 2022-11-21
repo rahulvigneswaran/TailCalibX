@@ -3,4 +3,4 @@ Reproducibility is an issue when it comes to CIFAR100_LT. This is because differ
 
 To evade this issue, we fixed and saved the data points we used for each imbalance factor and seed. 
 
-So, if you want to exactly reproduce our results, we suggest you to replace the code from `libs/data/ImbalanceCIFAR.py` with `libs/data/CIFAR100_LT/ImbalanceCIFAR_reprod.py`. This code change basically loads the PyTorch saved datapoints inside `libs/data/CIFAR100_LT/` dir and uses them instead of randomly selecting the datapoints.
+So, if you want to exactly reproduce our results, we suggest you to load the data, target tuple for respective phase, imb_factor, seed from here.
